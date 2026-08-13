@@ -143,6 +143,23 @@ The check runs the standard-library `unittest` suite and compiles all Python sou
 
 This MVP does not claim to model production embedding quality, ANN implementation defects, inference-time prompt attacks, side-channel timing, cryptographic isolation, or the correctness of any legal proposition. Passing it is evidence about the modeled retrieval boundary, not a security certification. Add system-specific adapters and adversarial cases before using it as a release gate.
 
+## Assurance toolkit
+
+This repository is part of a set of small, deterministic tools for testing AI-agent and retrieval-system failure boundaries:
+
+- [SourceAdapter-Fuzz](https://github.com/dnega-dev/SourceAdapter-Fuzz) — fault injection for public-data acquisition strategies.
+- [SourceContract](https://github.com/dnega-dev/SourceContract) — conformance testing for official-source ingestion adapters.
+- [ClaimSpec](https://github.com/dnega-dev/ClaimSpec) — executable grounding contracts for research-agent traces.
+- [CitationChaos](https://github.com/dnega-dev/CitationChaos) — citation mutation testing for grounded-answer pipelines.
+- [AsOfGuard](https://github.com/dnega-dev/AsOfGuard) — temporal-contamination detection for RAG and agent memory.
+- [Legal-MCP-Assurance](https://github.com/dnega-dev/Legal-MCP-Assurance) — black-box assurance for legal and retrieval tool servers.
+- [JurisdictionLeakBench](https://github.com/dnega-dev/JurisdictionLeakBench) — retrieval-scope isolation security benchmark.
+- [MemoryLitmus](https://github.com/dnega-dev/MemoryLitmus) — conformance testing for agent-memory semantics.
+- [FailureKata](https://github.com/dnega-dev/FailureKata) — executable practice from coding-agent transcript failures.
+- [FieldQuarantine](https://github.com/dnega-dev/FieldQuarantine) — safe migration of offline submissions across schema changes.
+
+Each project is independently installable and reports deterministic outcomes suitable for local development and CI.
+
 ## License
 
 Apache License 2.0. See [LICENSE](LICENSE).
