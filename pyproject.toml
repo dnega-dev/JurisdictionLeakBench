@@ -27,6 +27,12 @@ classifiers = [
 ]
 dependencies = []
 
+[project.urls]
+Homepage = "https://github.com/dnega-dev/JurisdictionLeakBench"
+Repository = "https://github.com/dnega-dev/JurisdictionLeakBench"
+Issues = "https://github.com/dnega-dev/JurisdictionLeakBench/issues"
+Changelog = "https://github.com/dnega-dev/JurisdictionLeakBench/blob/main/CHANGELOG.md"
+
 [project.scripts]
 jurisdiction-leak-bench = "jurisdiction_leak_bench.cli:main"
 
