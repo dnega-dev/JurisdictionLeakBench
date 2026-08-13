@@ -1,5 +1,9 @@
 # JurisdictionLeakBench
 
+[![CI](https://github.com/dnega-dev/JurisdictionLeakBench/actions/workflows/ci.yml/badge.svg)](https://github.com/dnega-dev/JurisdictionLeakBench/actions/workflows/ci.yml)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-3776AB)](https://www.python.org/)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 JurisdictionLeakBench is a **zero-runtime-dependency, reproducible Python 3.9+ security benchmark** for retrieval-scope isolation. It asks a narrow question: when semantically overlapping records share one retrieval system, can a query cross a boundary that the authenticated principal is not allowed to cross?
 
 The benchmark uses only generated text and deterministic synthetic canaries. It contains **no real client data, confidential material, people, cases, or legal advice**.
